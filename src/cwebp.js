@@ -7,7 +7,7 @@ const enwebp=function() {
         return path.join(__dirname, "../", "/bin/libwebp_osx/bin/cwebp");//return osx library path
 
     }else if (process.platform === 'linux') {
-        return path.join(__dirname, "../", "/bin/libwebp_linux/bin/cwebp");//return linux library path
+        return '/usr/bin/cwebp'; 
     }else if (process.platform === 'win32') {
 
         if (process.arch === 'x64') {
